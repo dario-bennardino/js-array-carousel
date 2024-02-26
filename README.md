@@ -24,4 +24,7 @@ Non lasciamoci spaventare dalla complessità apparente dell’esercizio, ma anal
 # Svolgimento
 
 1. Mi creo la struttura html con un box sliders che conterà le immagini ed i due bottoni per lo scorrimento.
-2. 
+2. Inserisco tutti i prcorsi delle immagini in un array
+3. inserisco in items-wrapper tutti gli elementi html contenenti l'immagine con la classe hide
+4. tolgo la classe hide al primo elemento
+5. creo un ciclo delle immagini e ad ogni ciclo aggiungo il tag con l'immagine ciclata 

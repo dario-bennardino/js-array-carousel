@@ -28,3 +28,6 @@ Non lasciamoci spaventare dalla complessità apparente dell’esercizio, ma anal
 3. inserisco in items-wrapper tutti gli elementi html contenenti l'immagine con la classe hide
 4. tolgo la classe hide al primo elemento
 5. creo un ciclo delle immagini e ad ogni ciclo aggiungo il tag con l'immagine ciclata 
+6. prendo tutti gli elementi con la classe img
+7. inizializzo un contatore a zero
+8. al click delle frecce incremento o decremento il counter

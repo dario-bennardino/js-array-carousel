@@ -15,6 +15,6 @@ const images = [
 //creo ciclo delle immagini e ad ogni ciclo aggiungo il tag con l'immagine
 for(let i=0; i < images.length; i++){
     const img = images[i];
-    console.log(img);
+   itemsWrapper.innerHTML += `<img class="hide" src="${img}">`
     
 }

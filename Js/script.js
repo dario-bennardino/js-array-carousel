@@ -1,9 +1,9 @@
 //Inserisco tutti i prcorsi delle immagini in un array
+console.log('avvio');
 
-//elements
 const itemsWrapper = document.querySelector('.items-wrapper');
-const bottom = document.querySelector('.bottom');
-const top = document.querySelector('.top');
+const btnUp = document.querySelector('.btn-up');
+const btnDown = document.querySelector('.btn-down');
 
 
 let counterImg = 0;
@@ -37,11 +37,11 @@ console.log(itemsCollection[0]);
 itemsCollection[counterImg].classList.remove('hide');
 
 //al click delle frecce incremento o decremento il counter 
-bottom.addEventListener('click', function(){
+btnDown.addEventListener('click', function(){
     counterImg--;
 })
 
-top.addEventListener('click', function(){
+btnUp.addEventListener('click', function(){
     counterImg++;
 })
 

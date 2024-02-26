@@ -55,11 +55,11 @@
     color: red;
 }
 
-.btn-arrow.bottom{
+.btn-arrow.btn-down{
     bottom: 10px;
 }
 
-.btn-arrow.top{
+.btn-arrow.btn-up{
     top: 10px;
 }
 

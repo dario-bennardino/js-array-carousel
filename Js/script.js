@@ -36,7 +36,7 @@ console.log(itemsCollection[0]);
 //al primo elemento tolgo la classe hide tramite remuve
 itemsCollection[counterImg].classList.remove('hide');
 
-//al click delle frecce incremento o decremento il counter
+//al click delle frecce incremento o decremento il counter 
 bottom.addEventListener('click', function(){
     counterImg--;
 })

@@ -1,9 +1,12 @@
 //Inserisco tutti i prcorsi delle immagini in un array
-console.log('avvio');
+// console.log('avvio');
 
 const itemsWrapper = document.querySelector('.items-wrapper');
 const btnUp = document.querySelector('.btn-up');
 const btnDown = document.querySelector('.btn-down');
+
+//nascondo il bottone btnDown di default
+btnDown.classList.add('hide')
 
 
 let counterImg = 0;
@@ -18,7 +21,7 @@ const images = [
 ]
 
 //creo ciclo delle immagini e ad ogni ciclo aggiungo il tag con l'immagine
-for(let i=0; i < images.length; i++){
+for(let i = 0; i < images.length; i++){
     const img = images[i];
    itemsWrapper.innerHTML += `<img class="img hide" src="${img}">`
     
@@ -28,21 +31,48 @@ for(let i=0; i < images.length; i++){
 const itemsCollection = document.getElementsByClassName('img');
 
 //mi restituisce un html collection ovvero array che come elemento ha un elemento html 
-console.log(itemsCollection);
+// console.log(itemsCollection);
 //se seleziono il primo
-console.log(itemsCollection[0]);
+// console.log(itemsCollection[0]);
 
 
 //al primo elemento tolgo la classe hide tramite remuve
-itemsCollection[counterImg].classList.remove('hide');
+itemsCollection[counterImg].classList.remove('hide')
 
 //al click delle frecce incremento o decremento il counter 
+
+//BOTTONE btnDown
 btnDown.addEventListener('click', function(){
-    counterImg--;
+    btnUp.classList.remove('hide')
+
+//rimetto la classe hide all'elemento con l'indice attuale che si incrementa o si decrementa
+itemsCollection[counterImg--].classList.add('hide')
+
+if(counterImg === 0){
+    btnDown.classList.add('hide')
+}
+
+//tolgo la classe hide all'elemento a indice contatore che si è incrementato o decrementato
+itemsCollection[counterImg].classList.remove('hide')
 })
 
+//BOTTONE btnUp
 btnUp.addEventListener('click', function(){
-    counterImg++;
-})
 
+    btnDown.classList.remove('hide')
+
+    //rimetto la classe hide all'elemento con l'indice attuale che si incrementa o si decrementa
+    itemsCollection[counterImg++].classList.add('hide')
+
+    //tolgo la classe hide all'elemento a indice contatore che si è incrementato o decrementato
+    itemsCollection[counterImg].classList.remove('hide')
+
+    console.log(counterImg);
+
+    if(counterImg === images.length - 1){
+    btnUp.classList.add('hide')
+    }
+
+
+})
 

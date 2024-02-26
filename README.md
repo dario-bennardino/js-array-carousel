@@ -31,3 +31,8 @@ Non lasciamoci spaventare dalla complessità apparente dell’esercizio, ma anal
 6. prendo tutti gli elementi con la classe img
 7. inizializzo un contatore a zero
 8. al click delle frecce incremento o decremento il counter
+7. rimetto la classe hide all'elemento con l'indice attuale che si incrementa o si decrementa
+8. tolgo la classe hide all'elemento a indice contatore che si è incrementato o decrementato
+9. ad ogni click controllo l'indice, se il contatore è === 0 al bottone btnDown aggiungo la classe hide (situazione di default), se invece il contatore è === alla lunghezza dell'arrey - 1 aggiungo la classe hide a btnUp
+
+10. al click di btnUp si toglie la classe hide di bottone left
